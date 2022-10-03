@@ -11,4 +11,5 @@ init({
 // occurs during the life of this document.
 const unsubscribe = getTTVC((measurement) => {
     console.log('TTVC:', measurement.duration);
+    console.log(performance.getEntriesByType('mark'));
 });

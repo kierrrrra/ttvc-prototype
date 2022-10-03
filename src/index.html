@@ -10,7 +10,39 @@
 
 <body>
     <h1>Testing TTVC metric</h1>
-    <img src="https://placekitten.com/2000/2000" width="300" height="300" />
+    <p>
+        <img src="https://placekitten.com/300/300" width="300" height="300" onload="performance.mark('image-onload-0');" />
+        <script>performance.mark('image-inline-0');</script>
+    </p>
+    <p>
+        <img src="https://placekitten.com/301/301" width="300" height="300" onload="performance.mark('image-onload-1');" />
+        <script>performance.mark('image-inline-1');</script>
+    </p>
+    <p>
+        <img src="https://placekitten.com/2002/2002" width="300" height="300"
+            onload="performance.mark('image-onload-2');" />
+        <script>performance.mark('image-inline-2');</script>
+    </p>
+    <p>
+        <img src="https://placekitten.com/2003/2003" width="300" height="300"
+            onload="performance.mark('image-onload-3');" />
+        <script>performance.mark('image-inline-3');</script>
+    </p>
+    <p>
+        <img src="https://placekitten.com/2004/2004" width="300" height="300"
+            onload="performance.mark('image-onload-4');" />
+        <script>performance.mark('image-inline-4');</script>
+    </p>
+    <p>
+        <img src="https://placekitten.com/2005/2005" width="300" height="300"
+            onload="performance.mark('image-onload-5');" />
+        <script>performance.mark('image-inline-5');</script>
+    </p>
+    <p>
+        <img src="https://placekitten.com/2006/2006" width="300" height="300"
+            onload="performance.mark('image-onload-6');" />
+        <script>performance.mark('image-inline-6');</script>
+    </p>
 </body>
 
 </html>
