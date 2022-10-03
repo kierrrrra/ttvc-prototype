@@ -18,6 +18,14 @@ Run webpack build to generate files in `dist/` folder.
 npm run build
 ```
 
+## Running local server
+
+You can also use a local webpack dev server to see page in action.
+
+```
+npm run serve
+```
+
 ### Inline vs. external resource
 
 You can modify [webpack.config.js](./webpack.config.js#L18) file and uncomment `new HtmlInlineScriptPlugin()` line to inline the code in HTML rather than generating a standalone file.

@@ -10,6 +10,10 @@ init({
 // Reports the last visible change for each navigation that
 // occurs during the life of this document.
 const unsubscribe = getTTVC((measurement) => {
-    console.log('TTVC:', measurement.duration);
-    console.log(performance.getEntriesByType('mark'));
+    console.log('Measurement collected at:', performance.now());
+
+    console.log('TTVC:', measurement);
+
+    // report marks to measure individual content injection / load
+    console.log('Marks:', performance.getEntriesByType('mark'));
 });

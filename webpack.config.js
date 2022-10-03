@@ -17,4 +17,9 @@ module.exports = {
         }),
         // new HtmlInlineScriptPlugin()
     ],
+    devServer: {
+        compress: true,
+        port: 'auto',
+        open: true,
+    },
 };
