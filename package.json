@@ -1,0 +1,22 @@
+{
+  "name": "ttvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "webpack": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dropbox/ttvc": "^1.0.0"
+  },
+  "devDependencies": {
+    "html-inline-script-webpack-plugin": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
