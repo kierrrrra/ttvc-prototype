@@ -9,13 +9,14 @@ module.exports = {
     target: 'web',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'ttvc.js'
+        filename: 'ttvc.js',
+        publicPath: ''
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html'
         }),
-        // new HtmlInlineScriptPlugin()
+        new HtmlInlineScriptPlugin()
     ],
     devServer: {
         compress: true,
