@@ -16,6 +16,10 @@ const unsubscribe = getTTVC((measurement) => {
 
     console.log('TTVC:', measurement);
 
+    performance.mark("dbx-ttvc", {
+        startTime: measurement.duration,
+    })
+
     // report marks to measure individual content injection / load
     console.log('Marks:', performance.getEntriesByType('mark'));
 });
